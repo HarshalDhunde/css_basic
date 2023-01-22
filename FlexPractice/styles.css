@@ -1,0 +1,42 @@
+/* this is universal selector , which apply to all */
+*{
+    /* alag se border nhi lagta , content ka size small hota aur border apply hota hai */
+    box-sizing: border-box;
+}
+.container{
+    height: 400px;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    /* used for align cross axis just like justify-content: ; */
+    align-items:flex-start ;
+    align-items: flex-end;
+    align-items: center;
+    align-items: flex-start;
+    /* used for multi line flex box */
+    align-content: flex-start;
+    /* align-items: flex-start; */
+    
+
+}
+.box{
+    border: 1px solid red;
+    background-color: aqua ;
+    width: 100px;
+    /* flex-grow:1; */
+    flex-shrink: 4;
+}
+#box1{
+    order: 1;
+}
+#box2{
+    order:8;
+}
